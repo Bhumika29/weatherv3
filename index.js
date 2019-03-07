@@ -26,3 +26,6 @@ app.post("/webhook", function(req, res) {
     source: "webhook-echo-sample"
   });
 });
+app.listen(process.env.PORT || 8000, function() {
+  console.log("Server up and listening");
+});
